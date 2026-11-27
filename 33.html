@@ -35,11 +35,12 @@ function parbaudit() {
 
   // === 2. un 3. UZDEVUMS — MAINI ŠEIT: punktu pārbaude ar if / else if / else ===
   if (punkti < 0) {
-    zina = "Kļūda: punkti nevar būt negatīvi!";
+    zina = "Punkti nevar būt negatīvi, brāl!";
   } else if (punkti >= 20) {
-    zina = "Uzvara!";
+    zina = "Tu uzvarēji, brāl!";
   } else {
-    zina = "Turpini spēli!";
+    zina = "Turpini spēlēt, brāl! Līdz uzvarai vēl: " + (20 - punkti);
+    
   }
 
   // === GATAVĀ DAĻA — parāda izvēlēto ziņu lapā (nemaini) ===
